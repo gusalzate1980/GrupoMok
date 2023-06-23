@@ -52,6 +52,7 @@ namespace DataBase
                 {
                     this.BusinessRuleError = "There is not data base connection";
                     Id = 0;
+                    this.BusinessRule = false;
                 }
             }
             catch (Exception e)
@@ -59,9 +60,82 @@ namespace DataBase
                 this.ExecutionOk = false;
                 this.Exception = e;
                 Id = 0;
+                this.BusinessRule = false;
             }
 
             return Id;
+        }
+
+        private PaginatedQuery<FilteredProductsDto> BuildFilteredProducts(DataTableCollection tables,int numRows)
+        {
+            return new PaginatedQuery<FilteredProductsDto>()
+            {
+                TotalPages = (int)Math.Ceiling((double)(Int32.Parse(tables[0].Rows[0][0].ToString())/numRows)),
+                TotalRecords = Int32.Parse(tables[0].Rows[0][0].ToString()),
+                Result = BuildFilteredItems(tables[1].Rows)
+            };
+        }
+
+        private List<FilteredProductsDto> BuildFilteredItems(DataRowCollection rows)
+        {
+            List<FilteredProductsDto> products  = new List<FilteredProductsDto>();
+
+            foreach (DataRow row in rows) 
+            {
+                products.Add(new FilteredProductsDto()
+                {
+                    Brand = row["Brand"].ToString(),
+                    Category = row["Category"].ToString(),
+                    Name = row["Name"].ToString(),
+                    Price = Int32.Parse(row["Price"].ToString()),
+                    Score = Decimal.Parse(row["Score"].ToString())
+                });
+            }
+
+            return products;
+        }
+
+        public PaginatedQuery<FilteredProductsDto> GetFilteredProducts(PaginationDto<GetFilteredProductsDto> filter)
+        {
+            var Id = 0;
+            try
+            {
+                this.iDataBase.ConfigExecution(this.ConnectionString, "GetFilteredProducts", CommandType.StoredProcedure);
+                this.iDataBase.AddParameter(DbType.Int32, "Page", 0, filter.Page);
+                this.iDataBase.AddParameter(DbType.Int32, "NumRows", 0, filter.NumRows);
+                this.iDataBase.AddParameter(DbType.Int32, "IdBrand", 0, filter.Filters.IdBrand);
+                this.iDataBase.AddParameter(DbType.Int32, "IdCategory", 0, filter.Filters.IdCategory);
+                this.iDataBase.AddParameter(DbType.String, "Name", 50, filter.Filters.Name);
+                this.iDataBase.AddParameter(DbType.Int32, "PriceMin",0 , filter.Filters.PriceMin);
+                this.iDataBase.AddParameter(DbType.Int32, "PriceMax", 0, filter.Filters.PriceMax);
+                this.iDataBase.AddParameter(DbType.String, "LogicalOperator", 3, filter.LogicalOperator);
+
+                this.ExecutionOk = true;
+
+                if (this.iDataBase.IsConnected())
+                {
+                    this.iDataBase.Query();
+
+                    return BuildFilteredProducts(this.iDataBase.GetDataSet().Tables,filter.NumRows);
+                    this.BusinessRule = true;
+                    
+                }
+                else
+                {
+                    this.BusinessRule = false;
+                    this.BusinessRuleError = "There is not data base connection";
+                    Id = 0;
+                }
+            }
+            catch (Exception e)
+            {
+                this.ExecutionOk = false;
+                this.Exception = e;
+                this.BusinessRule = false;
+                Id = 0;
+            }
+
+            return new PaginatedQuery<FilteredProductsDto>();
         }
 
         public int UpdateProduct(ProductDto product)
@@ -99,12 +173,14 @@ namespace DataBase
                 {
                     this.BusinessRuleError = "There is not data base connection";
                     Id = 0;
+                    this.BusinessRule = false;
                 }
             }
             catch (Exception e)
             {
                 this.ExecutionOk = false;
                 this.Exception = e;
+                this.BusinessRule = false;
                 Id = 0;
             }
 

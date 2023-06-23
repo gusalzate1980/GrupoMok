@@ -129,5 +129,39 @@ namespace ApiCompras.Controllers
             }
 
         }
+
+        [HttpPost("GetFilteredProducts")]
+        public ActionResult<WebServiceResponse<PaginatedQuery<FilteredProductsDto>>> GetFilteredProducts(WebServiceRequest<PaginationDto<GetFilteredProductsDto>> request)
+        {
+            if (this.ValidarPeticion(JsonConvert.SerializeObject(request.Data),
+                                    request.Token,
+                                    request.Timestamp,
+                                    Int32.Parse(_configuration.GetSection("SegundosValidesPeticion").Value)))
+            {
+                this._productBr.GetFilteredProducts(request.Data);
+                var a = new WebServiceResponse<PaginatedQuery<FilteredProductsDto>>()
+                {
+                    Data = (PaginatedQuery<FilteredProductsDto>)this._productBr.Data,
+                    BusinessRulesOk = this._productBr.BusinessRuleOk,
+                    ServerOk = this._productBr.ServerOk,
+                    UserMessage = this._productBr.UserMessage,
+                };
+
+                if (!a.ServerOk)
+                {
+                    a.DeveloperMessage = new string[]
+                    {
+                        new string(this._productBr.DeveloperMessage),
+                    };
+                }
+
+                return a;
+            }
+            else
+            {
+                return NotFound();
+            }
+
+        }
     }
 }
