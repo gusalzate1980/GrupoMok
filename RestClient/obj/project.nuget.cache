@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QrSxAQtgxfFHwPpymAXJ3BEpcVXZ4XbQkMrlm2mMLmTJQRgrqvyBJSphTA3Tr0x5QwZAnX1x5WcdODjer3yorw==",
+  "success": true,
+  "projectFilePath": "F:\\Pruebas\\GrupoMok\\GrupoMok\\RestClient\\RestClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

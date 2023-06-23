@@ -1,0 +1,12 @@
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\bin\Debug\net7.0\RestClient.deps.json
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\bin\Debug\net7.0\RestClient.dll
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\bin\Debug\net7.0\RestClient.pdb
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.csproj.AssemblyReference.cache
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.AssemblyInfoInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.AssemblyInfo.cs
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.csproj.CoreCompileInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.dll
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\refint\RestClient.dll
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\RestClient.pdb
+F:\Pruebas\GrupoMok\GrupoMok\RestClient\obj\Debug\net7.0\ref\RestClient.dll

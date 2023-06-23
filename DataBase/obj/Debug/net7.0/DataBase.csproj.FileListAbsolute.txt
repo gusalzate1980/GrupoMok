@@ -1,0 +1,17 @@
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.csproj.AssemblyReference.cache
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.AssemblyInfoInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.AssemblyInfo.cs
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.csproj.CoreCompileInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\DataBase.deps.json
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\DataBase.dll
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\DataBase.pdb
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\Dto.dll
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\GenericDataBase.dll
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\Dto.pdb
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\bin\Debug\net7.0\GenericDataBase.pdb
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.csproj.CopyComplete
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.dll
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\refint\DataBase.dll
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\DataBase.pdb
+F:\Pruebas\GrupoMok\GrupoMok\DataBase\obj\Debug\net7.0\ref\DataBase.dll

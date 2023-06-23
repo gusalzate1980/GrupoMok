@@ -1,0 +1,12 @@
+F:\Pruebas\GrupoMok\GrupoMok\Util\bin\Debug\net7.0\Util.deps.json
+F:\Pruebas\GrupoMok\GrupoMok\Util\bin\Debug\net7.0\Util.dll
+F:\Pruebas\GrupoMok\GrupoMok\Util\bin\Debug\net7.0\Util.pdb
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.csproj.AssemblyReference.cache
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.AssemblyInfoInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.AssemblyInfo.cs
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.csproj.CoreCompileInputs.cache
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.dll
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\refint\Util.dll
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\Util.pdb
+F:\Pruebas\GrupoMok\GrupoMok\Util\obj\Debug\net7.0\ref\Util.dll
